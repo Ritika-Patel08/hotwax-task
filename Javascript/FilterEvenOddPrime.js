@@ -33,7 +33,7 @@ for(var i=0;i<numbers.length;i++)
     }
 }
 
-
+console.log(done)
 console.log(even);
 console.log(odd);
 console.log(prime);
