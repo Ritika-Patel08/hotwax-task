@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Column Click</title>
+  <style>
+    td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <table id="myTable">
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+    </tr>
+   
+  </table>
+
+  <script>
+    const secondColumnCells = document.querySelectorAll('#myTable tr td:nth-child(2)')
+    secondColumnCells.forEach(function(cell) {
+      cell.addEventListener('click', function() {
+        cell.style.backgroundColor = 'lightblue';
+      });
+    });
+  </script>
+
+</body>
+</html>
